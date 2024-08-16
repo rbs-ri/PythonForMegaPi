@@ -107,7 +107,8 @@ class MegaPi():
                         callback(r)
                     sleep(0.01)
                 else:	
-                    sleep(0.5)
+                    self.close()
+                    break
             except Exception as ex:
                 print(str(ex))
                 self.close()
